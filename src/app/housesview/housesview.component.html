@@ -1,0 +1,24 @@
+﻿
+<div *ngIf="house" id="present">
+  <p>
+   Name : {{house.name}}
+  </p>
+  <p>
+    Region : {{house.region}}
+  </p>
+  <p *ngIf="house.coatOfArms">
+    Coat of arms : {{house.coatOfArms}}
+  </p>
+  <p *ngIf="house.words">
+    Words : {{house.words}}
+  </p>
+  <p *ngIf="house.founded">
+    Founded : {{house.founded}}
+  </p>
+  <p *ngIf="house.titles[0]">
+    Titles : {{house.titles}}
+  </p>
+  <p *ngIf="house.seats[0]">
+    Seats : {{house.seats}}
+  </p>
+</div>  

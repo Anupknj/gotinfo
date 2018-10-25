@@ -1,0 +1,41 @@
+﻿
+<head>
+  <title>GOT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <div class="container" id="book">
+    <div class="text-center">
+      <div *ngIf="book" class="">
+        <br />
+        <br />
+
+        <p> URL : <a href="book.url">{{book.url}}</a></p><br />
+        <p> Name :  {{book.name}}</p><br />
+
+        <p>ISBN :{{book.isbn}}</p><br />
+        <p>Authors : {{book.authors}}</p><br />
+        <p>Number of pages: {{book.numberOfPages}}</p><br />
+        <p>Publishers : {{book.publisher}}</p><br />
+        <p> Country : {{book.country}}</p><br />
+
+        <p> Media Type: {{book.mediaType}}</p><br />
+
+        <p> Released: {{book.released}}</p><br />
+        <!--<p>Characters : <span *ngFor="let char of book.characters";let firstel=first;let lastel=last;">{{char}}</span> </p><br />
+        <p> Pov Characters: {{book.povCharacters}}</p>-->
+
+
+
+
+      </div>
+    </div>
+  </div>
+  </body>
+  

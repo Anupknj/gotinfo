@@ -1,0 +1,21 @@
+﻿
+
+  
+
+
+<div class="container" id="books">
+  <div class="card-group d-flex">
+    <div *ngIf="books.length>0">
+      <div *ngFor="let book of books">
+        <img src="https://l450v.alamy.com/450v/h8n972/george-r-r-martin-game-of-thrones-books-on-a-bookshelf-h8n972.jpg" class="img-responsive" alt="map" width="100%" height="80%" /> 
+        <a style="text-align:center;" [routerLink]="['/booksview',book.isbn]" class="btn btn-primary">{{book.name}}</a>
+        <br />
+        <br />
+      </div>
+       
+        </div>
+      </div>
+    </div>
+
+ 
+  

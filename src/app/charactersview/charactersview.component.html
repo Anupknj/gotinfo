@@ -1,0 +1,20 @@
+﻿<div id="display">
+<div *ngIf="character">
+
+<p *ngIf="character.name">Name : {{character.name}}</p>
+  <p *ngIf="character.gender">Gender : {{character.gender}}</p>
+  <p *ngIf="character.born">Born : {{character.born}}</p>
+  <p *ngIf="character.died">Died : {{character.died}}</p>
+  <p *ngIf="character.culture">Culture : {{character.culture}}</p>
+  <p *ngIf="character.titles[0]">Titles : {{character.titles}}</p>
+  <p *ngIf="character.aliases[0]">Aliases : {{character.aliases}}</p>
+  <p *ngIf="character.father">Father : {{character.father}}</p>
+  <p *ngIf="character.mother">Mother : {{character.mother}}</p>
+
+  <p *ngIf="character.playedBy">Played By: {{character.playedBy}}</p>
+</div>
+  </div>
+
+
+
+

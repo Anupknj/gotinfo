@@ -1,0 +1,23 @@
+﻿<br />
+<div class="container" *ngIf="houses.length>0">
+  <div class="card-group">
+    <div *ngFor="let house of houses">
+    <br />
+      <div class="card bg-danger">
+        <div class="card-body text-center"><br />
+          <p class="card-text">{{house.name}}</p>
+          <p class="card-text">{{house.region}}</p>
+        </div>
+        <button routerLink="/housesview/{{house.url.split('/').pop()}}" type="button" class="btn btn-primary">Click here for Information</button>  
+    </div><br /><br />
+  </div><br />
+    <br />
+    <br />
+
+  
+
+  
+</div>
+  <button id="previous" style="display:block;" class="btn btn-danger" (click)="OnClick()">Previous</button>
+
+  <button id="next" style="display:block;" class="btn btn-success" (click)="OnClickMe()">Next</button>

@@ -1,0 +1,14 @@
+﻿#next{
+  display : none;
+  float:right;
+}
+
+#previous{
+  float: left;
+}
+
+#books {
+  margin: 20px;
+  padding: 25px;
+  background: linear-gradient(to top right, #ffffff 0%, #ccccff 100%);
+}
